@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
   
+  <!-- Leaflet Map CSS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
 
 </head>
 <body>
@@ -18,7 +24,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#videos">Videos</a></li>
-        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#map">Destinations</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -39,7 +45,7 @@
 
     <!-- About Image -->
     <div class="about-image">
-      <img src="mypic.jpg" alt="Diwakar Mandal" />
+      <img src="picture/mypic.jpg" alt="Diwakar Mandal" />
     </div>
 
     <!-- About Description -->
@@ -47,7 +53,7 @@
       <h2>About Me</h2>
       <p>
         🌍 Hey there! I’m <b>Diwakar Mandal</b>, a 20-year-old travel vlogger based at Chandigarh University. ✈️  
-        I explore new places, try local cuisines, and dive into diverse cultures. My channel brings you exciting travel vlogs, budget travel tips, and honest destination reviews! 🌟  
+        I explore new places, try local cuisines, and dive into diverse cultures. My channel brings you exciting travel vlogs, budget travel tips,and    honest destination reviews! 🌟  
         Traveling inspires me, and I love sharing my journey through my camera! 🎥✨  
         Join me as I explore the world—one vlog at a time! 🌏  
         Don't forget to hit SUBSCRIBE and be part of the adventure! 🕊️ *The Restless Bird*
@@ -60,7 +66,7 @@
         <b>📸 Instagram:</b> 
         <a href="https://www.instagram.com/nomaddiwakar/?hl=en" target="_blank">@nomaddiwakar</a><br/>
 
-        ❤️ Support my journey (UPI): <b>dipumandal94300@okaxis</b>
+        ❤️ Support my journey (UPI): <b>nomaddiwakar@ptyes</b>
       </p>
     </div>
 
@@ -87,26 +93,17 @@
   </section>
 
   <!-- Destinations Visited Section -->
-  <section id="destinations" class="destinations">
-    <div class="container">
-      <h2>Destinations I Visited</h2>
-      <div class="gallery">
-        <figure>
-          <img src="dharmshala.jpg" alt="Dharamshala">
-          <figcaption>Dharamshala</figcaption>
-        </figure>
-        <figure>
-          <img src="spiti.jpg" alt="Spiti Valley">
-          <figcaption>Spiti Valley</figcaption>
-        </figure>
-        <figure>
-          <img src="chandrataal.jpg" alt="Chandrataal Lake">
-          <figcaption>Chandrataal</figcaption>
-        </figure>
-        <!-- Add more destinations as needed -->
-      </div>
-    </div>
-  </section>
+   <!-- Leaflet Map JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Visited Places Map -->
+<section id="map" class="map-section">
+  <div class="container">
+    <h2>Places I Have Visited 🌍</h2>
+    <div id="worldMap"></div>
+  </div>
+</section>
+
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
