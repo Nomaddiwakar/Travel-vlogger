@@ -50,7 +50,7 @@ nav {
 }
 
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('picture/chicham.jpg');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('chicham.jpg');
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -319,3 +319,4 @@ footer {
     font-size: 1.2rem;
   }
 }
+
