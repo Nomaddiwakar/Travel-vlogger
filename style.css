@@ -50,7 +50,7 @@ nav {
 }
 
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('chicham.jpg');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('picture/chicham.jpg');
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -209,13 +209,36 @@ nav {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Destinations Gallery */
+/* Destinations Gallery
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.2rem;
   margin-top: 2rem;
+} */
+
+#destinations {
+  scroll-margin-top: 100px; /* height of header */
 }
+section {
+  scroll-margin-top: 100px;
+}
+
+
+/* Map Section */
+.map-section {
+  padding: 5rem 0;
+  background: #f9f9f9;
+}
+
+#worldMap {
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 2rem;
+}
+
 
 .gallery figure {
   background: #0b1024;
